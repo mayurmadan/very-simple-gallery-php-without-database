@@ -1,74 +1,11 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-        <title>
-                Calculator App in PHP
-        </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Updated ,Hello, World!</title>
 </head>
-<?php
-        $first= $_POST['first'];
-        $second= $_POST['second'];
-        $operator = $_POST['operator'];
-        $result = '';
-        if (is_numeric($first) && is_numeric($second)) {
-                switch ($operator) {
-                        case "+":
-                        $result = $first + $second;
-                                break;
-                        case "-":
-                        $result = $first - $second;
-                                break;
-                        case "*":
-                                $result = $first * $second;
-                                break;
-                        case "/":
-                                $result = $first / $second;
-                }
-        }
-
-?>
-
 <body>
-        <div id="page-wrap">
-                <h1>Calculator in PHP</h1>
-                <form action=""
-                        method="post"
-                        id="calculator">
-                        <p>
-                                <input type="number"
-                                        name="first"
-                                        id="first"
-                                        required="required"
-                                        value="<?php echo $first; ?>" />
-                                        <b>Enter First Value</b>
-                        </p>
-                        <p>
-                                <input type="number"
-                                        name="second"
-                                        id="second"
-                                        required="required"
-                                        value="<?php echo $second; ?>" />
-                                        <b>Enter Second Value</b>
-                        </p>
-                        <p>
-                                <input readonly="readonly"
-                                        name="result"
-                                        value="<?php echo $result; ?>">
-                                        <b>Result</b>
-                        </p>
-                                <input type="submit"
-                                        name="operator"
-                                        value="+" />
-                                <input type="submit"
-                                        name="operator"
-                                        value="-" />
-                                <input type="submit"
-                                        name="operator"
-                                        value="*" />
-                                <input type="submit"
-                                        name="operator"
-                                        value="/" />
-                </form>
-        </div>
+        <h1><?php echo 'Updated ,Hello, World'; ?></h1>
 </body>
 </html>
